@@ -129,6 +129,6 @@ Example:
 Example:
 
 ```bash
-/usr/local/cuda-11.6/bin/nvcc -O3 2.1.3-cuda.cu `pkg-config opencv4 --cflags --libs` -o 2.1.3-cuda
+/usr/local/cuda-11.6/bin/nvcc -O3 2.1.3-cuda.cu `pkg-config opencv4 --cflags --libs` -o PW2-1-3_cuda
  ./PW2-1-3_cuda painting.tif 5 3
 ```
