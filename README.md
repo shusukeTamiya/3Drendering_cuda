@@ -108,7 +108,7 @@ Example:
 
 Usage:
 
-./PW2-1-1_cuda <image_path> <kernel_size> `<sigma>`
+./PW2-1-1_cuda <image_path> <kernel_size> <sigma>
 
 Example:
 
@@ -129,6 +129,21 @@ Example:
 Example:
 
 ```bash
-/usr/local/cuda-11.6/bin/nvcc -O3 2.1.3-cuda.cu `pkg-config opencv4 --cflags --libs` -o PW2-1-3_cuda
+/usr/local/cuda-11.6/bin/nvcc PW2-1-3_cuda.cu `pkg-config opencv4 --cflags --libs` PW2-2_cuda.cpp -o PW2-1-3_cuda
  ./PW2-1-3_cuda painting.tif 5 3
+```
+
+### Exercise 2.2(Cuda)
+
+- Usage:
+
+```bash
+./PW2-2_cuda <image_path> <kernel_size> <sigma>
+```
+
+Example:
+
+```bash
+/usr/local/cuda-11.6/bin/nvcc PW2-2_cuda.cu `pkg-config opencv4 --cflags --libs` PW2-2_cuda.cpp -o PW2-2_cuda
+ ./PW2-2_cuda painting.tif 5 3
 ```
